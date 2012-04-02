@@ -123,6 +123,9 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
 
+    #Plugins
+    'south',
+
     #Apps
     'core',
     'blog',
@@ -157,7 +160,9 @@ LOGGING = {
     }
 }
 
+LOCAL_MIDDLEWARE_CLASSES = LOCAL_INSTALLED_APPS = list()
 try:
     from local_settings import *
 except ImportError:
     pass
+INSTALLED_APPS += LOCAL_INSTALLED_APPS

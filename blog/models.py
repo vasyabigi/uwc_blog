@@ -1,13 +1,13 @@
-import datetime
 from django.db import models
 from django.db.models import Manager
+from django.utils import timezone
 
 
 class PublicManager(Manager):
     """Returns published posts that are not in the future."""
 
     def published(self):
-        return self.get_query_set().filter(status__gte=2, publish__lte=datetime.datetime.now())
+        return self.get_query_set().filter(status__gte=2, publish__lte=timezone.now())
 
 
 class Category(models.Model):
@@ -34,7 +34,7 @@ class Post(models.Model):
     author = models.CharField('Author', max_length=255)
     content = models.TextField('Content',)
     status = models.IntegerField('Status', choices=STATUS_CHOICES, default=2)
-    publish = models.DateTimeField('Publish', default=datetime.datetime.now)
+    publish = models.DateField('Publish', default=timezone.now)
     categories = models.ManyToManyField(Category, blank=True)
     updated = models.DateTimeField('Updated', auto_now=True)
     created = models.DateTimeField('Created', auto_now_add=True)
@@ -48,3 +48,18 @@ class Post(models.Model):
 
     def __unicode__(self):
         return self.title
+
+    @models.permalink
+    def get_absolute_url(self):
+        return ('blog:detail', None, {
+            'year': self.publish.year,
+            'month': self.publish.strftime('%b').lower(),
+            'day': self.publish.day,
+            'slug': self.slug
+        })
+
+    def get_previous_post(self):
+        return self.get_previous_by_publish(status__gte=2)
+
+    def get_next_post(self):
+        return self.get_next_by_publish(status__gte=2)

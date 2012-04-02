@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+  <h2>{{ post.title }}</h2>
+  <p>
+    {% if post.get_previous_by_publish %}
+    <a href="{{ post.get_previous_post.get_absolute_url }}" title="View previous post">&laquo; {{ post.get_previous_post }}</a>
+    {% endif %}
+    {% if post.get_next_by_publish %}
+    | <a class="next" href="{{ post.get_next_post.get_absolute_url }}" title="View next post">{{ post.get_next_post }} &raquo;</a>
+    {% endif %}
+  </p>
+  <p>{{ post.publish|date:"j F Y" }}</p>
+  <div>{{ post.content|safe }}</div>
+
+{% endblock %}
