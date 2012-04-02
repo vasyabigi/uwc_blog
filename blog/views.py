@@ -1,11 +1,11 @@
 import time
 import datetime
 
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
 from django.http import Http404
 
-from models import Post
+from models import Post, Category
 
 
 def post_list(request, template_name='blog/post_list.html'):
@@ -120,3 +120,13 @@ def post_detail(request, slug, year, month, day, template_name="blog/post_detail
     except Post.DoesNotExist:
         raise Http404
     return render(request, template_name, {'post': post})
+
+
+def category_detail(request, slug, template_name="blog/category_detail.html"):
+    category = get_object_or_404(Category, slug=slug)
+    posts = category.posts.published()
+    context = {
+        'category': category,
+        'posts': posts,
+    }
+    return render(request, template_name, context)

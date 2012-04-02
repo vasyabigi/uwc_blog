@@ -22,6 +22,10 @@ class Category(models.Model):
     def __unicode__(self):
         return self.title
 
+    @models.permalink
+    def get_absolute_url(self):
+        return ('blog:category_detail', (self.slug,))
+
 
 class Post(models.Model):
     """Blog post model."""
@@ -35,7 +39,7 @@ class Post(models.Model):
     content = models.TextField('Content',)
     status = models.IntegerField('Status', choices=STATUS_CHOICES, default=2)
     publish = models.DateField('Publish', default=timezone.now)
-    categories = models.ManyToManyField(Category, blank=True)
+    categories = models.ManyToManyField(Category, blank=True, related_name='posts')
     updated = models.DateTimeField('Updated', auto_now=True)
     created = models.DateTimeField('Created', auto_now_add=True)
 
