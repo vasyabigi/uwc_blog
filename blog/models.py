@@ -36,7 +36,7 @@ class Post(models.Model):
     status = models.IntegerField('Status', choices=STATUS_CHOICES, default=2)
     publish = models.DateTimeField('Publish', default=datetime.datetime.now)
     categories = models.ManyToManyField(Category, blank=True)
-    updated = models.DateTimeField('Created', auto_now=True)
+    updated = models.DateTimeField('Updated', auto_now=True)
     created = models.DateTimeField('Created', auto_now_add=True)
 
     objects = PublicManager()
