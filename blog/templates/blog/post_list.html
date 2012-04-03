@@ -1,9 +1,13 @@
 {% extends "base.html" %}
 
+{% load pagination_tags %}
+
 {% block content %}
-    <ul>
-        {% for post in post_list %}
-            <li><a href="{{ post.get_absolute_url }}">{{ post }}</a></li>
-        {% endfor %}
-    </ul>
+  <ul>
+    {% autopaginate post_list 5 %}
+    {% for post in post_list %}
+      <li><a href="{{ post.get_absolute_url }}">{{ post }}</a></li>
+    {% endfor %}
+  </ul>
+  {% paginate %}
 {% endblock content %}

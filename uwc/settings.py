@@ -86,6 +86,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'pagination.middleware.PaginationMiddleware',
 )
 
 ROOT_URLCONF = 'uwc.urls'
@@ -125,9 +126,9 @@ INSTALLED_APPS = (
 
     #Plugins
     'south',
+    'pagination',
 
     #Apps
-    'core',
     'blog',
 )
 
