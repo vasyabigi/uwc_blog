@@ -3,6 +3,24 @@ from django.db.models import Manager
 from django.utils import timezone
 
 
+class Tag(models.Model):
+    """Tag model."""
+    name = models.CharField(max_length=25)
+    slug = models.SlugField()
+
+    class Meta:
+        verbose_name = u'Tag'
+        verbose_name_plural = u'Tags'
+        ordering = ('name',)
+
+    def __unicode__(self):
+        return self.name
+
+    @models.permalink
+    def get_absolute_url(self):
+        return ('blog:tag_detail', (self.slug,))
+
+
 class PublicManager(Manager):
     """Returns published posts that are not in the future."""
     def published(self):
@@ -11,12 +29,13 @@ class PublicManager(Manager):
 
 class Category(models.Model):
     """Blog category model."""
-    title = models.CharField(u'Title', max_length=255)
-    slug = models.SlugField(u'Slug', unique=True)
+    title = models.CharField(max_length=255)
+    slug = models.SlugField(unique=True)
 
     class Meta:
         verbose_name = u'Category'
         verbose_name_plural = u'Categories'
+        ordering = ('title',)
 
     def __unicode__(self):
         return self.title
@@ -32,15 +51,16 @@ class Post(models.Model):
         (1, 'Draft'),
         (2, 'Public'),
     )
-    title = models.CharField('Title', max_length=255)
-    slug = models.SlugField('Slug', unique_for_date='publish')
-    author = models.CharField('Author', max_length=255)
-    content = models.TextField('Content',)
-    status = models.IntegerField('Status', choices=STATUS_CHOICES, default=2)
-    publish = models.DateField('Publish', default=timezone.now)
+    title = models.CharField(max_length=255)
+    slug = models.SlugField(unique_for_date='publish')
+    author = models.CharField(max_length=255)
+    content = models.TextField()
+    status = models.IntegerField(choices=STATUS_CHOICES, default=2)
+    publish = models.DateField(default=timezone.now)
     categories = models.ManyToManyField(Category, blank=True, related_name='posts')
-    updated = models.DateTimeField('Updated', auto_now=True)
-    created = models.DateTimeField('Created', auto_now_add=True)
+    tags = models.ManyToManyField(Tag, blank=True, related_name='posts')
+    updated = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True)
 
     objects = PublicManager()
 

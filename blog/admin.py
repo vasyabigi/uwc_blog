@@ -1,5 +1,10 @@
 from django.contrib import admin
-from models import Category, Post
+from models import Category, Post, Tag
+
+
+class TagAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ('name',)}
+admin.site.register(Tag, TagAdmin)
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -11,5 +16,6 @@ class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'publish', 'status')
     list_filter = ('publish', 'categories', 'status')
     search_fields = ('title', 'body')
+    filter_horizontal = ('tags',)
     prepopulated_fields = {'slug': ('title',)}
 admin.site.register(Post, PostAdmin)

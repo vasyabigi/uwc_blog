@@ -5,7 +5,7 @@ from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
 from django.http import Http404
 
-from models import Post, Category
+from models import Post, Category, Tag
 
 
 def post_list(request, template_name='blog/post_list.html'):
@@ -130,3 +130,9 @@ def category_detail(request, slug, template_name="blog/category_detail.html"):
         'posts': posts,
     }
     return render(request, template_name, context)
+
+
+def tag_detail(request, slug, template_name="blog/tag_detail.html"):
+    tag = get_object_or_404(Tag, slug=slug)
+    posts = tag.posts.all()
+    return render(request, template_name, {'posts': posts})
