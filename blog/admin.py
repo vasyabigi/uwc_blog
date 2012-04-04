@@ -1,5 +1,7 @@
 from django.contrib import admin
+
 from models import Category, Post, Tag, PostComment
+from imperavi.admin import ImperaviModelAdmin
 
 
 class TagAdmin(admin.ModelAdmin):
@@ -12,7 +14,7 @@ class CategoryAdmin(admin.ModelAdmin):
 admin.site.register(Category, CategoryAdmin)
 
 
-class PostAdmin(admin.ModelAdmin):
+class PostAdmin(ImperaviModelAdmin, admin.ModelAdmin):
     list_display = ('title', 'publish', 'status')
     list_filter = ('publish', 'categories', 'status')
     search_fields = ('title', 'body')

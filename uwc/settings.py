@@ -8,7 +8,7 @@ DEBUG = False
 TEMPLATE_DEBUG = True
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    ('Vasyl Stanislavchuk', 'vasyl.stanislavchuk@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -127,6 +127,7 @@ INSTALLED_APPS = (
     #Plugins
     'south',
     'pagination',
+    'imperavi',
 
     #Apps
     'blog',

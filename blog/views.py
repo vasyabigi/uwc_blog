@@ -5,7 +5,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from django.http import Http404
 
-from models import Post, Category, Tag, PostComment
+from models import Post, Category, Tag
 from forms import PostCommentForm
 
 
@@ -100,6 +100,7 @@ def archive_day(request, year, month, day, template_name="blog/archive_day.html"
 
 
 def post_detail(request, slug, year, month, day, template_name="blog/post_detail.html"):
+    """Blog post detail view."""
     try:
         tt = time.strptime('%s-%s-%s' % (year, month, day),
                            '%s-%s-%s' % ('%Y', '%b', '%d'))

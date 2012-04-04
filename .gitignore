@@ -3,5 +3,5 @@
 *.db
 .DS_Store
 local_settings.py
-public/static
-public/media
+uwc/public/static
+uwc/public/media
