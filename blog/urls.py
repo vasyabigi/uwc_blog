@@ -2,8 +2,7 @@ from django.conf.urls import patterns, url
 from django.views.generic import ListView
 
 from models import Category, Tag
-from views import post_list, archive_year, archive_month, post_detail, \
-    archive_day, category_detail, tag_detail
+from views import *
 
 urlpatterns = patterns('',
     url(r'^(?P<year>\d{4})/(?P<month>\w{3})/(?P<day>\d{1,2})/(?P<slug>[-\w]+)/$',

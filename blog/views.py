@@ -1,11 +1,12 @@
 import time
 import datetime
 
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from django.http import Http404
 
-from models import Post, Category, Tag
+from models import Post, Category, Tag, PostComment
+from forms import PostCommentForm
 
 
 def post_list(request, template_name='blog/post_list.html'):
@@ -119,7 +120,18 @@ def post_detail(request, slug, year, month, day, template_name="blog/post_detail
         post = Post.objects.published().get(**lookup_kwargs)
     except Post.DoesNotExist:
         raise Http404
-    return render(request, template_name, {'post': post})
+
+    comment_form = PostCommentForm(request.POST or None)
+    if request.method == "POST":
+        if comment_form.is_valid():
+            comment_form.save(post=post)
+            return redirect(post.get_absolute_url())
+
+    context = {
+        'post': post,
+        'comment_form': comment_form
+    }
+    return render(request, template_name, context)
 
 
 def category_detail(request, slug, template_name="blog/category_detail.html"):

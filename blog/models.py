@@ -86,3 +86,19 @@ class Post(models.Model):
 
     def get_next_post(self):
         return self.get_next_by_publish(status__gte=2)
+
+
+class PostComment(models.Model):
+    post = models.ForeignKey(Post, related_name='comments')
+    author = models.CharField(max_length=63, blank=True)
+    content = models.TextField()
+    updated = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = 'Comment'
+        verbose_name_plural = 'Comments'
+        ordering = ('-created',)
+
+    def __unicode__(self):
+        return u'%s: %s' % (self.post, self.content[:60])
