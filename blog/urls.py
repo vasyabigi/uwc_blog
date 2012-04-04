@@ -1,7 +1,7 @@
 from django.conf.urls import patterns, url
 from django.views.generic import ListView
 
-from models import Category
+from models import Category, Tag
 from views import post_list, archive_year, archive_month, post_detail, \
     archive_day, category_detail, tag_detail
 
@@ -17,6 +17,6 @@ urlpatterns = patterns('',
     url(r'^categories/(?P<slug>[-\w]+)/$', category_detail, name="category_detail"),
     url(r'^categories/$', ListView.as_view(model=Category), name="category_list"),
     url(r'^tags/(?P<slug>[-\w]+)/$', tag_detail, name="tag_detail"),
-
+    url(r'^tags/$', ListView.as_view(model=Tag), name="tag_list"),
     url(r'^$', post_list, name="post_list"),
 )

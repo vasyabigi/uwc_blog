@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Post tags{% endblock %}
+
+{% block content %}
+  <h2>Post tags</h2>
+  <ul>
+    {% for tag in object_list %}
+      <li><a href="{{ tag.get_absolute_url }}" title="View posts tagged {{ tag }}">{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
