@@ -121,16 +121,18 @@ def post_detail(request, slug, year, month, day, template_name="blog/post_detail
     except Post.DoesNotExist:
         raise Http404
 
-    comment_form = PostCommentForm(request.POST or None)
-    if request.method == "POST":
-        if comment_form.is_valid():
-            comment_form.save(post=post)
-            return redirect(post.get_absolute_url())
-
     context = {
         'post': post,
-        'comment_form': comment_form
     }
+
+    if post.allow_comments:
+        comment_form = PostCommentForm(request.POST or None)
+        context.update({'comment_form': comment_form})
+        if request.method == "POST":
+            if comment_form.is_valid():
+                comment_form.save(post=post)
+                return redirect(post.get_absolute_url())
+
     return render(request, template_name, context)
 
 

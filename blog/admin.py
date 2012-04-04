@@ -18,9 +18,18 @@ class PostAdmin(admin.ModelAdmin):
     search_fields = ('title', 'body')
     filter_horizontal = ('tags',)
     prepopulated_fields = {'slug': ('title',)}
+    fieldsets = (
+        (None, {
+            'fields': (('title', 'slug'), 'author', 'content',
+                ('status', 'publish', 'allow_comments'),
+                'categories', 'tags',
+            )
+        }),
+    )
 admin.site.register(Post, PostAdmin)
 
 
 class PostCommentAdmin(admin.ModelAdmin):
+    list_display = ('__unicode__', 'created')
     list_filter = ('post',)
 admin.site.register(PostComment, PostCommentAdmin)

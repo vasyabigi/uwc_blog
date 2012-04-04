@@ -59,6 +59,7 @@ class Post(models.Model):
     publish = models.DateField(default=timezone.now)
     categories = models.ManyToManyField(Category, blank=True, related_name='posts')
     tags = models.ManyToManyField(Tag, blank=True, related_name='posts')
+    allow_comments = models.BooleanField(default=True)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
 

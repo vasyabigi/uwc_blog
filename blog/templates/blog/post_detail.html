@@ -17,23 +17,26 @@
   <p>{{ post.publish|date:"j F Y" }}</p>
   <div>{{ post.content|safe }}</div>
 
-  <h3>Comments:</h3>
-  {% with post.comments.all as comments %}
-    <ul>
-      {% autopaginate comments 5 %}
-      {% for comment in comments %}
-        <li>
-          {{ comment.created }} <b>{{ comment.author }}:</b> {{ comment.content }}
-        </li>
-      {% endfor %}
-    </ul>
-    {% paginate %}
-  {% endwith %}
+  {% if comment_form %}
+    <h3>Comments:</h3>
+    {% with post.comments.all as comments %}
+      <ul>
+        {% autopaginate comments 5 %}
+        {% for comment in comments %}
+          <li>
+            {{ comment.created }} <b>{{ comment.author }}:</b> {{ comment.content }}
+          </li>
+        {% endfor %}
+      </ul>
+      {% paginate %}
+    {% endwith %}
 
-  <form action="{{ post.get_absolute_url }}" method="post">{% csrf_token %}
-    {{ comment_form.as_p }}
-    <input type="submit" value="Send">
-  </form>
-
+    <form action="{{ post.get_absolute_url }}" method="post">{% csrf_token %}
+      {{ comment_form.as_p }}
+      <input type="submit" value="Send">
+    </form>
+  {% else %}
+    <h3>Comments are not allowed.</h3>
+  {% endif %}
 
 {% endblock %}

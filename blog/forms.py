@@ -15,10 +15,11 @@ class PostCommentForm(forms.ModelForm):
         return author if author else "Anonymous"
 
     def clean_content(self):
-        if len(self.cleaned_data['content']) < 2:
+        content = self.cleaned_data['content']
+        if len(content) < 2:
             raise forms.ValidationError('At list 2 symbols!')
         else:
-            return self.cleaned_data['content']
+            return content
 
     def save(self, *args, **kwargs):
         post = kwargs.pop('post')
