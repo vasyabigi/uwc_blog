@@ -1,0 +1,1785 @@
+[
+    {
+        "pk": 8, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "category", 
+            "name": "Category", 
+            "app_label": "blog"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "postcomment", 
+            "name": "Comment", 
+            "app_label": "blog"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "post", 
+            "name": "Post", 
+            "app_label": "blog"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "tag", 
+            "name": "Tag", 
+            "app_label": "blog"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contenttype", 
+            "name": "content type", 
+            "app_label": "contenttypes"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "group", 
+            "name": "group", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "logentry", 
+            "name": "log entry", 
+            "app_label": "admin"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "migrationhistory", 
+            "name": "migration history", 
+            "app_label": "south"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "permission", 
+            "name": "permission", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "session", 
+            "name": "session", 
+            "app_label": "sessions"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "site", 
+            "name": "site", 
+            "app_label": "sites"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "user", 
+            "name": "user", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": "52ece335888c9a223a59e9d88efaa395", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-04-16T10:49:58.924Z", 
+            "session_data": "NTdjM2MxZjIwMDBmNmQ1OWY0ODdmMTQ4ZGQyODI4M2YxMTA2ZTZmMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": "93996d965593856bbc7b5982e2cef5cb", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-04-17T20:22:20.396Z", 
+            "session_data": "NTdjM2MxZjIwMDBmNmQ1OWY0ODdmMTQ4ZGQyODI4M2YxMTA2ZTZmMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": "19bbaf6b34d8f7b97b0961a336629a7e", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-04-18T19:32:24.629Z", 
+            "session_data": "NTdjM2MxZjIwMDBmNmQ1OWY0ODdmMTQ4ZGQyODI4M2YxMTA2ZTZmMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": "f4386ea9d88103dee8186db9b06d18af", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-04-19T08:56:07.248Z", 
+            "session_data": "NTdjM2MxZjIwMDBmNmQ1OWY0ODdmMTQ4ZGQyODI4M2YxMTA2ZTZmMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "sites.site", 
+        "fields": {
+            "domain": "example.com", 
+            "name": "example.com"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-04-05T11:25:16.458Z", 
+            "app_name": "blog", 
+            "migration": "0008_auto__add_unique_tag_name"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-04-02T16:19:38.162Z", 
+            "app_name": "blog", 
+            "migration": "0001_initial"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-04-02T16:31:39.020Z", 
+            "app_name": "blog", 
+            "migration": "0003_auto__chg_field_post_publish"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-04-02T16:53:48.243Z", 
+            "app_name": "blog", 
+            "migration": "0002_auto__chg_field_post_publish"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-04-03T21:09:06.362Z", 
+            "app_name": "blog", 
+            "migration": "0003_auto__add_tag"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-04-03T21:16:42.703Z", 
+            "app_name": "blog", 
+            "migration": "0004_auto"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-04-04T19:32:11.070Z", 
+            "app_name": "blog", 
+            "migration": "0005_auto__add_postcomment"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-04-04T20:51:18.253Z", 
+            "app_name": "blog", 
+            "migration": "0006_auto__add_field_post_allow_comments"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-04-05T10:16:24.031Z", 
+            "app_name": "blog", 
+            "migration": "0007_auto__del_field_post_author"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "blog.tag", 
+        "fields": {
+            "name": "Design", 
+            "slug": "design"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "blog.tag", 
+        "fields": {
+            "name": "Prototyping", 
+            "slug": "prototyping"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "blog.tag", 
+        "fields": {
+            "name": "Right Idea", 
+            "slug": "right-idea"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "blog.tag", 
+        "fields": {
+            "name": "UX", 
+            "slug": "ux"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "blog.tag", 
+        "fields": {
+            "name": "sketching", 
+            "slug": "sketching"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "blog.category", 
+        "fields": {
+            "slug": "design-strategy", 
+            "title": "Design Strategy"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "blog.category", 
+        "fields": {
+            "slug": "happy-clients", 
+            "title": "Happy Clients"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "blog.category", 
+        "fields": {
+            "slug": "implementation", 
+            "title": "Implementation"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "blog.category", 
+        "fields": {
+            "slug": "interaction-design", 
+            "title": "Interaction Design"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "blog.category", 
+        "fields": {
+            "slug": "sparks", 
+            "title": "Sparks"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "blog.post", 
+        "fields": {
+            "status": 2, 
+            "allow_comments": true, 
+            "title": "We're Going All in with Product Design", 
+            "created": "2012-04-05T10:29:12.851Z", 
+            "updated": "2012-04-05T11:25:37.102Z", 
+            "publish": "2012-03-27", 
+            "content": "\r\n<p>&nbsp;Last week, we highlighted our&nbsp;<a href=\"http://www.zurb.com/article/932/can-we-drop-the-term-ux-design-already-an\">objection to UX design as a discipline</a>. It's not the first time we've been defiant in our cause. That's caused many people to ask, however, \"what do we stand for?\"</p>\r\n<p>If you recall from&nbsp;<a href=\"http://www.zurb.com/article/932/can-we-drop-the-term-ux-design-already-an\">our previous post</a>, most of the examples of solid design work could be summarized into a few general ideas:</p>\r\n<p>Prototyping and building things \u2014 not documenting or \"strategizing\"Rapid iteration \u2014 working through the problems with tangible productsBuilding strong teaching cultures \u2014 successful products requires design literacyProject inspired, not project managed \u2014 great products happen in-spite of project managers or program managersLoose contracts or specs \u2014 design thinking requires flexibility</p>\r\n<p>ZURB over the last 15 years hasn't spent much time worrying about how to shape our industry \u2014 instead we kept our heads down learning and practicing with our clients and customers. And the funny thing is, when you look at that summarized list, ZURB has been preaching those exact principles from day one. Even as a consulting practice.</p>\r\n<p>There are limitations, however, with being a consultant and having a lasting impact with the companies we help. However, instead of looking at our services as insufficient,&nbsp;<a href=\"http://www.zurb.com/article/263/the-dreadful-mission-statement\">we decided to chart a course three years ago</a>&nbsp;that brought together a complete solution to help our customers succeed. At the time, I'm not sure many of our employees believed we could truly pull it off. Today, we have expanded our efforts to include products, events and publishing \u2014 all to help our customers design great products faster. Now more than ever, design companies now need to be even more invested in their customers needs.</p><h4>Helping People Design for People</h4>\r\n<p>Our purpose remains constant:&nbsp;<strong>Help People Design for People.</strong>&nbsp;When you put the needs of users first, the business goals often magically fall into place. It's not a tradeoff, but a healthy exchange of value.</p>\r\n<p>Early in my career as product designer of toys, I learned successful hits couldn't be predicted, but they almost always had some combination of delight and crowd backing. An&nbsp;<a href=\"http://www.zurb.com/word/aha-moment\">aha moment</a>. The perception of value was important, but not always grounded in beneficial \"features.\" The experience couldn't be predicted, but the principles of good product design, which have been around nearly a century, could still be applied.</p>\r\n<p>When I started designing websites in 1998, I took most of the same methods I had&nbsp;<a href=\"http://design.stanford.edu/PD/\" rel=\"no follow\">honed in school</a>, and applied the techniques to web development. It wasn't a perfect match, but I found that approach set ZURB apart from all those designers that came from graphic design backgrounds. At the time, calling myself a product designer seemed a little out of touch with people who just wanted a website.</p>\r\n<p>But as the years have passed and more people have become aware of the business value of design, it's become apparent that solving an interface problem on a tablet or phone truly is a product design problem. It's no longer just a desktop screen and the form factor of the actual device is rather secondary to the interface. Companies can no longer easily justify focusing only on desktop interfaces. We have to prepare for the future.</p><h4>Product Design is the Future</h4>\r\n<p>The next 15 years should be just as exciting as the last 15. At ZURB, we've committed ourselves to challenging the status quo, whether it's releasing an&nbsp;<a href=\"http://foundation.zurb.com/\" rel=\"no follow\">open source framework for multiple devices</a>&nbsp;or<a href=\"http://www.zurb.com/apps\">building product design apps</a>&nbsp;that even a marketer or executive could use. We're committed to furthering the discipline of product design and we think it's important to study the lessons history has taught us.</p>", 
+            "tags": [
+                4, 
+                5
+            ], 
+            "slug": "were-going-all-product-design", 
+            "categories": [
+                3
+            ]
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "blog.post", 
+        "fields": {
+            "status": 2, 
+            "allow_comments": false, 
+            "title": "Can We Drop the Term UX Design Already? And Other Rants", 
+            "created": "2012-04-05T10:30:43.089Z", 
+            "updated": "2012-04-05T11:25:50.538Z", 
+            "publish": "2012-03-21", 
+            "content": "\r\n<p>In this&nbsp;<a href=\"http://www.zurb.com/article/894/jargon-of-the-day-user-experience-design\">blog post on the subject of ux design</a>, we were blasted by a group of people suggesting that we were committing heresy by even suggesting the term doesn't mean anything. We've been<a href=\"http://www.zurb.com/article/155/user-experience-design-does-not-exist\">steadfast in our view that user experience design</a>&nbsp;isn't a discipline at all. I believe more people will start to see the problems with trying to form a career path based on&nbsp;<strong>the end result of successful design work.</strong>&nbsp;Heck, even&nbsp;<a href=\"http://www.peterme.com/2012/02/20/user-experience-design-is-dead-long-live-user-experience/\" rel=\"no follow\">Peter Merholz gave us validation</a>, and he's been a practitioner of user experience for over a decade.</p>\r\n<p>So why bring this up? A&nbsp;<a href=\"http://beta.branch.com/how-well-has-the-ux-client-services-model-adapted-to-the-way-products-are-built-today\">recent thread on UX clients services</a>&nbsp;by Ryan Freitas had us chatting around the office. The question he raises:</p>\r\n<p>How well has the UX client services model adapted to the way products are built today?\"</p>\r\n<p>Now if you don't actually believe UX design exists, it's a funny question to ask. But given that smart people are answering, including Peter, it's apparent that the conversation comes full circle to what successful product companies have been doing for decades. Such as:</p>\r\n<p>Prototyping and building things \u2014 not documenting or \"strategizing\"Rapid iteration \u2014 working through the problems with tangible productsBuilding strong teaching cultures \u2014 successful products requires design literacyProject inspired, not project managed \u2014 great products happen in-spite of project managers or program managersLoose contracts or specs \u2014 design thinking requires flexibility</p>\r\n<p>The discipline of&nbsp;<strong>design</strong>&nbsp;is complex and a bit vague \u2014 but it's that openness that allows great product teams to make amazing things happen for people. It's both a noun and a verb, and can't be looked at as simply a result or a process. Product design does require creating tangible results, though, and those people who can influence the final result with good old fashion elbow grease will get an upper hand in shaping the vision of a product.</p>\r\n<p>The user experience is a shared responsibility of all those who contribute and support a product. Modern product design has been around for centuries, and successful products have come in droves without the need of a person or group of designers responsible for the customer or user experience. It's a shared responsibility.</p>\r\n<p>So can we just drop the term? That or I'm going to call our controller, UX controller. She does a great job collecting money.&nbsp;</p>", 
+            "tags": [
+                4, 
+                5, 
+                6
+            ], 
+            "slug": "can-we-drop-term-ux-design-already-and-other-rants", 
+            "categories": [
+                3, 
+                5
+            ]
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "blog.post", 
+        "fields": {
+            "status": 2, 
+            "allow_comments": true, 
+            "title": "3 Ways to Get to the Right Idea", 
+            "created": "2012-04-05T10:52:22.599Z", 
+            "updated": "2012-04-05T11:26:02.873Z", 
+            "publish": "2012-03-13", 
+            "content": "\r\n<p>&nbsp;When author Harlan Ellison would get asked where he got his ideas, the award-winning writer&nbsp;<a href=\"http://www.doorly.com/writing/HarlanEllison.htm\" rel=\"no follow\">would joke</a>&nbsp;that he\u2019d send a check to a little shop in Schenectady, NY. In return, the shop would send him a fresh pack of six ideas. Joking aside, truth is that writers, like designers, get their ideas by paying close attention to the world around them and seeing what others are doing.</p>\r\n<p>But as more and more companies turn to design to grow into different markets, different avenues, it can be exhaustive to churn out idea after idea. No longer does it become just about generating a billion ideas.&nbsp;<strong>It becomes more and more about narrowing in on the right idea.&nbsp;</strong>Finding exactly what matters most to people, what solves their problem.</p>\r\n<p>So how do designers hit on that idea? How do they ferret out the gem among a stack of coals? How do they get the confidence to get it right and keep from being paralyzed by fear of getting it wrong?<strong>The real challenge to those questions is trying to solve the human problem</strong>, according to this video by the folks at&nbsp;<a href=\"http://continuuminnovation.com/\" rel=\"no follow\">Continuum</a>, a design strategy firm that works on everything from industrial products to household products like coffee makers. Check out the video below and watch how the designers narrow down on the right idea:</p>\r\n<p>Notice how the designers in the video use many design methods in their hunt for the right solution, such as&nbsp;<a href=\"http://www.zurb.com/word/brainstorming\">brainstorming</a>,&nbsp;<a href=\"http://www.zurb.com/word/sketching\">sketching</a>, and&nbsp;<a href=\"http://www.zurb.com/word/interviewing\">interviewing</a>. They even collaborate along the way, exploring dozens of ideas together to get to the right one. That being said, let's take a closer look at three points from the video.</p>\r\n<p><strong>Understanding users\u2019 needs and values.&nbsp;</strong>User aspirations tell us more than past product choices, the video points out. It\u2019s not enough to know just who our potential users are. What separates a great designer from one that just moves pixels is the person who delves deep into<a href=\"http://www.zurb.com/article/861/a-cry-for-user-centered-design\">the drives, beliefs, feelings and needs of their users.&nbsp;</a>If not, the consequences could be dire. Remember Josh Levy and Ross Cohen, co-founders of BeenVerifed, who&nbsp;<a href=\"http://www.zurb.com/article/853/a-product-searching-for-a-customer\">burned through $550,000</a>&nbsp;in funding without getting a single customer? That\u2019s because they spent months developing a product that didn\u2019t have a market, that nobody wanted to use.<strong>Getting ideas quickly into the wild.</strong>&nbsp;Tinkering with a prototype gets the idea out into the wild quickly, so we can&nbsp;<a href=\"http://www.zurb.com/article/888/3-tips-on-how-to-approach-user-testing\">user test</a>&nbsp;and refine the prototype. More than that, putting work out in front of would-be users as soon as possible can prevent a lot of heartache in the end. Take Google Wave for instance. Sure, it was a pretty technically impressive application, but it was a big flop. That\u2019s because Google didn\u2019t learn how users would respond to Wave before they released it.<strong>Good design strategy is actionable.</strong>&nbsp;As one designer says in the video, sometimes things that are called design strategy actually end in user insights rather than ideas. The key is turning those user insights into meaningful action. Take for instance our work with&nbsp;<a href=\"http://www.boreal-is.com/en/index.php\" rel=\"no follow\">Borealis</a>, a software company for managing environmentally responsible oil and gas projects. Insights from frustrated users led us to the actionable idea of centering the application around the users' profiles. More than that, we struck upon the idea of mini-apps that were easier to build, maintain, and would excite users.</p>\r\n<p>Getting to the right solution to a human problem requires&nbsp;<strong>deliberate practice, digging deep into the problem, asking tons of questions and sifting through dozens of ideas</strong>. It requires understanding users inside and out. By doing so, designers can strike upon the right idea without fearing they'll end up with a flop.</p>", 
+            "tags": [
+                4, 
+                7, 
+                8
+            ], 
+            "slug": "3-ways-get-right-idea", 
+            "categories": [
+                4, 
+                3
+            ]
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "blog.post", 
+        "fields": {
+            "status": 2, 
+            "allow_comments": true, 
+            "title": "In-Browser Prototyping ... Or How We Rapidly Rebooted ZURBword", 
+            "created": "2012-04-05T10:54:02.695Z", 
+            "updated": "2012-04-05T10:54:02.695Z", 
+            "publish": "2012-03-09", 
+            "content": "\r\n<p>Remember how yesterday we told you about refining your designs&nbsp;<a href=\"http://www.zurb.com/article/876/quick-and-dirty-design-critiques-with-in-\">in-browser quickly</a>? Well, that was only part of the story ... really, the tail end of the story of how we used&nbsp;<a href=\"http://foundation.zurb.com/\">Foundation</a>&nbsp;to code up a prototype in the browser for our new&nbsp;<a href=\"http://zurb.com/word\">ZURBword</a>&nbsp;front page. Take a look at our old page:</p>\r\n<p>As you can see, there wasn't much to look at. It was nothing more than a directory, a list of words with not much going on. We wanted something a bit more eye-catching that would encourage people to click around and check out our thoughts on some hearty design concepts. So around November last year, we started sketching out some ideas to take the site to the next level.</p>\r\n<p>But did we want to take those ideas and put them into Photoshop? Or did we want to go straight to code, designing in the browser? A lot of designers debate whether they should&nbsp;<a href=\"http://www.vanseodesign.com/web-design/designing-in-the-browser/\" rel=\"no follow\">design in browser</a>&nbsp;or<a href=\"http://www.sazzy.co.uk/2012/02/why-i-cant-design-in-the-browser/\" rel=\"no follow\">not</a>.</p>\r\n<p>However, the one big advantage to prototyping in the browser is that&nbsp;<strong>it's faster, trimming off several steps in the design process</strong>, especially if you already have an established visual style. Since we wanted to get the new ZURBword up as fast as possible, we decided to prototype it in the browser.</p><h4>Getting It in the Browser</h4>\r\n<p>We started playing with a few ideas, trying to figure out what would actually work. Take a look at some of our early ideas below.&nbsp;<strong>Click on the images to see a larger image.</strong></p>\r\n<p><a href=\"http://www.zurb.com/blog/system/images/327/original/1.jpg?1331322560\"></a><a href=\"http://www.zurb.com/blog/system/images/328/original/2.jpg?1331322592\"></a></p>\r\n<p>Here we lost a bit of focus on the content. There was too much line work going on and everything felt too structured and boxy. Overall, it felt too much like a beefed-up directory. So out these ideas went and it was back to the drawing board.</p>\r\n<p>Playing around with the lines and images, however, we came up these next set of images. Take a look (<strong>click on the images to see a larger image</strong>):</p>\r\n<p><a href=\"http://www.zurb.com/blog/system/images/334/original/3.jpg?1331331178\"></a><a href=\"http://www.zurb.com/blog/system/images/330/original/4.jpg?1331322700\"></a></p>\r\n<p>The design on the left, however, felt too forced, an island of stuff in a sea of text. The one on the right broke things up, which was kinda awesome. But there was that darn line problem again. Everything felt trapped, contained too much. However, we played even more with the blocks of content seeing where it would take us.</p>\r\n<p>Our exploration led us to the designs below.&nbsp;<strong>Click on the images to see a larger picture:</strong></p>\r\n<p><a href=\"http://www.zurb.com/blog/system/images/331/original/5.jpg?1331327634\"></a><a href=\"http://www.zurb.com/blog/system/images/332/original/6.jpg?1331327651\"></a></p>\r\n<p>In the end, we did something like 10 iterations to get to our final design. But we weren't quite done yet.</p><h4>Refining Our Design with the Inspector</h4>\r\n<p>As we said&nbsp;<a href=\"http://www.zurb.com/article/876/quick-and-dirty-design-critiques-with-in-\">yesterday</a>, we refined our designs by opening up the Chrome inspector. In less than five-minutes, a group of us, including myself, were able to quickly critique the design and suggest changes, which the inspector let us see instantaneously. We were able to change the background from white to gray and even add a drop shadow to the boxes.</p>\r\n<p>We also reversed engineered Foundation to add a couple more columns on the side for wider screens. One other nifty touch was having the images rotate each time you land on the front page.</p>\r\n<p>With those final changes in place, we were able to launch shortly after that. All in all, it took us a few weeks to get the new ZURBword up and running. And all thanks to in-browser prototyping.</p>", 
+            "tags": [], 
+            "slug": "-browser-prototyping-or-how-we-rapidly-rebooted-zu", 
+            "categories": [
+                4, 
+                6, 
+                3
+            ]
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "blog.post", 
+        "fields": {
+            "status": 2, 
+            "allow_comments": true, 
+            "title": "Quick and Dirty Design Critiques with In-Browser Prototyping", 
+            "created": "2012-04-05T10:54:41.047Z", 
+            "updated": "2012-04-05T10:55:20.558Z", 
+            "publish": "2012-03-08", 
+            "content": "\r\n<p>Our days can be pretty busy at ZURB. Sometimes we don\u2019t have time to stop everything and do a full-blown design&nbsp;<a href=\"http://www.zurb.com/word/critiquing\">critique</a>. Sometimes we just want quick and dirty feedback. That\u2019s where in-browser prototyping comes in handy, especially when we\u2019ve got a design that\u2019s nearly there but not quite there yet.</p>\r\n<p>In-browser prototyping came in handy while we were putting the finishing touches on the rebooted<a href=\"http://www.zurb.com/word\">ZURBword</a>. The original site wasn\u2019t up to snuff. So we put Arthur to work on a swank redesign. As he got closer to the final design, four of us huddled around Arthur and his computer, giving him a speedy design critique in about five minutes. To do it, we simply opened up the Chrome inspector to see some instantaneous changes. How we did it is something we wanted to share with you.</p><h4>Getting Dirty with Chrome Inspector</h4>\r\n<p>The original white background of our nearly-complete page wasn\u2019t quite working. So Bryan suggested using gray. That\u2019s when we opened up the Chrome inspector, searching the left-hand<a href=\"http://en.wikipedia.org/wiki/Document_Object_Model\" rel=\"no follow\">DOM</a>&nbsp;for the body element.&nbsp;<strong>Take a look (click on the image for a larger view):</strong></p>\r\n<p><a href=\"http://www.zurb.com/blog/system/images/312/original/1.jpg?1331243062\"></a></p>\r\n<p>We then went into the right-hand style box and started fiddling with the CSS, changing the color of the background.&nbsp;<strong>Click on the image below to see a larger picture of what we did:</strong></p>\r\n<p><a href=\"http://www.zurb.com/blog/system/images/313/original/2.jpg?1331243075\"></a></p>\r\n<p>Next we decided to add a drop shadow. So we moved in the DOM to the class we used for each of the containing boxes, to find the box-shadow in the style-box, double clicked on it, changing it to \u201c0px 2px 5px rgba(0,0,0,0.15)\u201d to add the shadow.&nbsp;<strong>Check out the larger image of what we did by clicking the image below:<strong></strong></strong></p>\r\n<p><a href=\"http://www.zurb.com/blog/system/images/317/original/3.jpg?1331243145\"></a></p><h4>Not An Excuse for Backseat Design</h4>\r\n<p>The changes only stick around as long as you don\u2019t reload the page. Once you reload the page, the changes will vanish. So you\u2019ll have to go into the actually CSS to make the changes permanent. Take for instance the box shadow, we used CSS3 to make it permanent on the actually code. (So that particular change might not show up on older browsers.)</p>\r\n<p>In any case, in-browser design critiques aren\u2019t an excuse for backseat designing. It\u2019s meant to&nbsp;<strong>be really quick, really dirty so you can be scrappy and prototype your ideas instantaneously.</strong>&nbsp;</p>", 
+            "tags": [], 
+            "slug": "quick-and-dirty-design-critiques-browser-prototypi", 
+            "categories": [
+                4, 
+                6, 
+                3
+            ]
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "blog.post", 
+        "fields": {
+            "status": 2, 
+            "allow_comments": true, 
+            "title": "Getting Sidetracked Projects Back on Track", 
+            "created": "2012-04-05T10:32:56.057Z", 
+            "updated": "2012-04-05T10:38:45.894Z", 
+            "publish": "2012-02-17", 
+            "content": "\r\n<p>Say an exciting client comes to you looking for splashy new product concepts, and they want your help. Awesome, it\u2019s the opportunity of a lifetime! Everything starts off on a roll, but then the entire project takes a wrong turn.</p>\r\n<p>The client gets hung up on hopes of \"silver bullet\" features that would, in a client\u2019s mind, allow a product to spread indefinitely with little-to-no work or expertise on their part. They want to imitate Facebook or Twitter rather than innovate. They don't want to give feedback, feeling like that would be doing your job for you. Forget about pitching a controversial idea, the client won\u2019t want to take the risk of advocating for your idea with corporate. Soon, the opportunity of a lifetime has turned into a nightmare.</p>\r\n<p>How do you get your project back on track? How do you turn the client around to your ideas? Over the years, we\u2019ve found ourselves in this exact situation and have learned a few tricks that gets our work back on track, making sure we end our projects with high fives all around.</p><h4>Avoiding Unexpected Expectations</h4>\r\n<p>Clients all have great expectations. More likely than not, you\u2019ve signed off on those expectations lock, stock, and barrel. But maybe the client starts asking you to do more than you signed up for \u2014 an extra page here or there, a little unexpected javascript, some bonus copywriting. So you find yourself falling back on the contract, saying, \"no, no \u2026 this is what you're paying for.\" &nbsp;If you\u2019re doing that, then something has already gone wrong.</p>\r\n<p><strong>Don\u2019t rely on the contract as insurance against this situation.</strong>&nbsp;You\u2019d be surprised at how many people sign contracts without fully reading what\u2019s in them. To avoid a situation of clashing expectations, we send over what we like to call \"homework questions.\" We ask up front for the client to clarify how the company will implement our work, trying to get a feel for what they expect out of us and what milestones we'll need to achieve.</p>\r\n<p>Once the project is underway, we reiterate upcoming milestones each week to see if both the client and us are still on the same page. But as they say \u2026 um, stuff happens, and you might find yourself at odds with the client mid-project over what\u2019s expected of you.</p>\r\n<p>Don\u2019t panic. You can still turn things around by offering different solutions, making tradeoffs, or extending the project. Show that you're willing to work with the client to find a solution, not just quoting the contract and brushing your hands of the situation. If it comes down to it, it might be best to refer the client to another company or a freelancer you trust to do the work that\u2019s outside your comfort zone.</p><h4>Figuring Out What the Clients Wants</h4>\r\n<p>Remember our big client from the beginning of the article who didn\u2019t want to give feedback because they felt they would be doing our job? Well, that\u2019s the exact situation we found ourselves in not too long ago. More often than not, that\u2019s because giving&nbsp;<a href=\"http://www.zurb.com/apps/357-the-art-of-giving-good-feedback\">clear feedback</a>&nbsp;and setting goals requires practice, and many clients are new to this process. In those cases, the client leaves it up to you, saying \"I\u2019ll know it when I see it.\" That\u2019s the worst, and can leave designers shooting in the dark unless they can ferret out more detail.</p>\r\n<p>Asking questions gets over this roadblock. But don\u2019t rely on just what they explicitly say, you have to read between the lines. Often clients will toss out solutions to perceived problems, and you\u2019ll have to identify those underlying problems. Think of yourself as an investigative reporter trying to get to the root of an answer. You\u2019ll have to ask why&nbsp;<a href=\"http://www.zurb.com/article/571/ask-why-five-times\">at least five times</a>&nbsp;before you reveal problems that aren\u2019t obvious. It\u2019s a lot like the tactic you\u2019d take when doing a&nbsp;<a href=\"http://www.zurb.com/word/interviewing\">customer interview</a>, where you have to drill deep into a customer's reasoning.</p>\r\n<p><strong>Once you understand those underlying problems, you\u2019ll be able to offer better solutions. As you talk, throw out options and see what resonates with the client.</strong></p><h4>Be A Good Listener</h4>\r\n<p>Of course, being a good listener helps ferret out those underlying problems, but you can find it\u2019s also useful in dealing with an anxious client.</p>\r\n<p>Because these projects can be hugely important to the future of the client\u2019s business, a client can quickly feel anxious if he can\u2019t see how it\u2019ll all come together. If he feels you\u2019re not \u201cgetting it\u201d or he's not sure what you\u2019re working on, the client can try to regain control by micromanaging the project.</p>\r\n<p>This is where being a good listener can be handy. Don\u2019t get the wrong idea, you shouldn't just nod your head, saying \u201cuh-huh, right, gotcha.\u201d The client needs to know that you understand what they\u2019re saying. What\u2019s extremely useful is to repeat back the gist of what they've just said, especially if it\u2019s a complex idea. If they offer feedback you agree with, let them know that and explain why it\u2019ll be a win for the user.</p>\r\n<p>Listening helps, but it\u2019s useless unless you take detailed notes. You can\u2019t possibly remember everything that\u2019s said, and missing details can seriously undermine trust, no matter how inconsequential they may seem. And, at the end of every session, let the client know what you\u2019ll be doing next and when it'll be done.&nbsp;<strong>Help the client understand how you'll be solving their problems and let them know what to expect.</strong></p><h4>Dealing with New Blood</h4>\r\n<p>A project can quickly end up in the weeds when a new decision-maker joins mid-project. In our experience, this is often a VP of Marketing. This isn\u2019t as uncommon as it may seem \u2014 often companies hire outside agencies because they\u2019re understaffed or unsure how to position themselves, which also leads to hiring new people. Since this new person wasn\u2019t present for all the early-decision making, he\u2019ll feel pressure to contribute: often by going against what's been done so far or bringing his own people onto the team.</p>\r\n<p>To be honest, we\u2019ve yet to find a surefire way to solve this problem. Nevertheless, getting the new person on board is crucial. Unless they're invested in the success of what we\u2019re doing, they\u2019ll fracture the company and the project can come to a grinding halt! The best advice we can give:<strong>keep the new person in the loop, address any concerns they bring up, and help them feel part of the process.</strong></p>\r\n<p><strong>What can really make or break a project is how you handle yourself and present your work when a project gets sidetracked.</strong>&nbsp;In the end, no matter what you do, some clients will be happy and others will be unhappy. However, most clients fall somewhere in the middle. Be flexible with your process, and don\u2019t have a knee-jerk reaction to change. By doing so, you\u2019ll be able to get your project moving in the right direction again.&nbsp;</p>", 
+            "tags": [], 
+            "slug": "getting-sidetracked-projects-back-track", 
+            "categories": [
+                7
+            ]
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "blog.post", 
+        "fields": {
+            "status": 2, 
+            "allow_comments": true, 
+            "title": "Deconstruction of Smashing Magazine's Responsive Redesign", 
+            "created": "2012-04-05T11:00:19.504Z", 
+            "updated": "2012-04-05T11:00:19.504Z", 
+            "publish": "2012-01-20", 
+            "content": "\r\n<p>&nbsp;We've said it once and we'll say it again, the&nbsp;<a href=\"http://www.zurb.com/article/843/old-ways-of-web-design-dont-work-anymore\">old ways of web design don't apply anymore</a>&nbsp;in the age of so many different phones, tablets, and other web-enabled devices. Millions of people use those devices on a daily basis to hop online. Websites can no longer afford to be stuck in 960px Photoshop templates.</p>\r\n<p>Some websites have embraced the brave new world of countless devices, such as&nbsp;<a href=\"http://bostonglobe.com/\" rel=\"no follow\">The Boston Globe</a>. Yet the number of websites that are responsive are few and far between. The latest to join the responsive ranks is&nbsp;<a href=\"http://www.smashingmagazine.com/\" rel=\"no follow\">Smashing Magazine</a>.</p>\r\n<p>Given our interest in responsive web design and our development of&nbsp;<a href=\"http://foundation.zurb.com/\">Foundation</a>, we were intrigued by Smashing Magazine's new homepage design. We liked what we saw and decided to do a complete deconstruction of the site, looking at what the folks at Smashing Magazine did well and at things they could improve on.</p>\r\n<p>It's awesome to see other sites take the plunge, think about how their site will display on all the future devices that will come out and become responsive. With Smashing Magazine, there are certainly opportunities for improvement, but it's a step in the right direction. We excited to see how they iterate and refine their site in the coming months.</p>", 
+            "tags": [], 
+            "slug": "deconstruction-smashing-magazines-responsive-redes", 
+            "categories": [
+                3
+            ]
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "blog.post", 
+        "fields": {
+            "status": 2, 
+            "allow_comments": true, 
+            "title": "The Sketch-Based Response to Client Feedback", 
+            "created": "2012-04-05T10:37:28.428Z", 
+            "updated": "2012-04-05T10:38:10.462Z", 
+            "publish": "2011-04-11", 
+            "content": "\r\n<p>Last week we talked about&nbsp;<a href=\"http://www.zurb.com/article/642/get-feedback-or-fail\">the importance of getting feedback</a>&nbsp;and&nbsp;<a href=\"http://www.zurb.com/article/643/getting-feedback-while-you-build\">how it was applied when we built Verify.</a>&nbsp;We want to go a little more in-depth and show you how we apply a sketch-based response tactic to client feedback.</p><h3>Feedback: The Dreaded 8-Letter Word</h3>\r\n<p>For most people, feedback isn't the easiest thing to receive, even for clients. Their product is their foundation, and it's never fun to hear about cracks and weak spots in it. But when we think about designing for people, feedback is necessary to seal those areas and make the product stronger. That's why&nbsp;<strong>we like to use sketching as the universal tool to help everyone see the problems and opportunities of their product together.</strong>&nbsp;It lightens up the feedback process to make it more fun and productive.</p>\r\n<p>Here are three examples of sketch-based responses we use while listening to clients.</p><h4>Example 1: Opportunity Sketches</h4>\r\n<p><strong>Client Says:</strong></p>\r\n<p>\"Our new product takes e-books to a whole new level. People can highlight passages, write notes, add resources, and let it sync with select friends. It's the new way to do book clubs and group studying!</p>\r\n<p><strong>Our Response:</strong>&nbsp;Opportunity sketches! We can take each feature and provide a series of opportunities from it, as well as develop new ideas that the client may not have thought of.</p>\r\n<p>\r\n<br></p><h4>Example 2: Workflows</h4>\r\n<p><strong>Client Says:</strong></p>\r\n<p>\"We continue to get support emails about adding a feature to upload a custom logo. Problem is, we already implemented it three months ago! Why aren't they finding it?\"</p>\r\n<p><strong>Our Response</strong>: Sketch out a workflow and see if its current placement feels natural. From there, look for other places within the flow to introduce it.</p><h4>Example 3: Low-Fi Wireframes</h4>\r\n<p><strong>Client Says:</strong></p>\r\n<p>\"I'm liking a lot of opportunities that we've generated, in particular these four for our logged in home. Now all we have to do is fit it all on one page while keeping with some the existing elements.\"</p>\r\n<p><strong>Our Response</strong>: A few variations of the page using low-fi wireframes. This will help the client start to see everything coming together while still staying loose to allow for changes.</p><h3>Keep the Feedback Loop Going</h3>\r\n<p>Sketching works in a variety of ways, but strategically using it to respond to clients is a great way to keep the dialogue flowing and to let your clients know you're listening. Sure feedback isn't always the icing on the cake, but when done visually with the aid of sketches, it produces a sugar high that gets people excited. And once they're loosened up, the dialogue can flow and great work can emerge.</p>", 
+            "tags": [], 
+            "slug": "sketch-based-response-client-feedback", 
+            "categories": [
+                7
+            ]
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "blog.postcomment", 
+        "fields": {
+            "content": "he end result is an experience, but you have to design *something* for a person to use or experience. Instead of putting the emphasis on creating a controlled result, let's focus more on letting experiences unfold through great craft.\r\n\r\nDesign management has been around a long time- the job of which is to make sure all the pieces of a solution are working in harmony to solve a particular problem. This takes many years of experience to get right- which means designers need to understand the craft of design first.", 
+            "post": 8, 
+            "created": "2012-04-05T11:11:10.136Z", 
+            "updated": "2012-04-05T11:11:10.136Z", 
+            "author": "Karynn Zmijewski"
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "blog.postcomment", 
+        "fields": {
+            "content": "Ideally, yes, \"user experience is a shared responsibility\" but in reality, many people involved in the process to manage, design, build, and deliver products often don't approach their work with consideration for their users at the center of their process. That's why, despite decades of product design, bad design of products still happens all the time. So clearly some product teams are failing miserably to contribute to a good user experience. That's where someone with a strong user focus concerned with how the users' experience interacting with products comes into the picture. What to call this role has been debated at length by many people, but their focus is on helping teams design products that result in a positive user experience. Maybe it's arguing semantics, but I believe experiences CAN be designed; just ask the folks at Disney, for example. Sure, designers can't \"control\" peoples reactions and emotions, but certainly people's reactions and emotions can be strongly influenced in ways intended to result in people having positive interactions with and feelings about a product. Isn't that, in effect, designing an experience?", 
+            "post": 8, 
+            "created": "2012-04-05T11:05:59.466Z", 
+            "updated": "2012-04-05T11:05:59.466Z", 
+            "author": "JR Key"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_logentry", 
+            "name": "Can add log entry", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_logentry", 
+            "name": "Can change log entry", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_logentry", 
+            "name": "Can delete log entry", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_group", 
+            "name": "Can add group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_group", 
+            "name": "Can change group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_group", 
+            "name": "Can delete group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_permission", 
+            "name": "Can add permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_permission", 
+            "name": "Can change permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_permission", 
+            "name": "Can delete permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_user", 
+            "name": "Can add user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_user", 
+            "name": "Can change user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_user", 
+            "name": "Can delete user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_category", 
+            "name": "Can add Category", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_category", 
+            "name": "Can change Category", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_category", 
+            "name": "Can delete Category", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_post", 
+            "name": "Can add Post", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_post", 
+            "name": "Can change Post", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_post", 
+            "name": "Can delete Post", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_postcomment", 
+            "name": "Can add Comment", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_postcomment", 
+            "name": "Can change Comment", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_postcomment", 
+            "name": "Can delete Comment", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_tag", 
+            "name": "Can add Tag", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_tag", 
+            "name": "Can change Tag", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_tag", 
+            "name": "Can delete Tag", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contenttype", 
+            "name": "Can add content type", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contenttype", 
+            "name": "Can change content type", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contenttype", 
+            "name": "Can delete content type", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_session", 
+            "name": "Can add session", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_session", 
+            "name": "Can change session", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_session", 
+            "name": "Can delete session", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_site", 
+            "name": "Can add site", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_site", 
+            "name": "Can change site", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_site", 
+            "name": "Can delete site", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_migrationhistory", 
+            "name": "Can add migration history", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_migrationhistory", 
+            "name": "Can change migration history", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_migrationhistory", 
+            "name": "Can delete migration history", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "root", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-04-05T08:56:07.244Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$u6ylrPMIbMb6$KVl4KgfZamiwAxOLcOhCSNUoaRo5UI4WB/8OMERwe/o=", 
+            "email": "root@asd.com", 
+            "date_joined": "2012-04-02T08:28:05.664Z"
+        }
+    }, 
+    {
+        "pk": 73, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-05T11:26:02.886Z", 
+            "object_repr": "3 Ways to Get to the Right Idea", 
+            "object_id": "12", 
+            "change_message": "Changed tags.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 72, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-05T11:25:50.548Z", 
+            "object_repr": "Can We Drop the Term UX Design Already? And Other Rants", 
+            "object_id": "9", 
+            "change_message": "Changed tags.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 71, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-05T11:25:37.113Z", 
+            "object_repr": "We're Going All in with Product Design", 
+            "object_id": "8", 
+            "change_message": "Changed tags.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 70, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-04-05T11:24:36.020Z", 
+            "object_repr": "Design", 
+            "object_id": "9", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 69, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-05T11:23:42.214Z", 
+            "object_repr": "Quick and Dirty Design Critiques with In-Browser Prototyping", 
+            "object_id": "14", 
+            "change_message": "Changed tags.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 68, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T11:23:31.644Z", 
+            "object_repr": "Design", 
+            "object_id": "9", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 67, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-05T11:23:18.842Z", 
+            "object_repr": "3 Ways to Get to the Right Idea", 
+            "object_id": "12", 
+            "change_message": "Changed tags.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 66, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T11:23:15.290Z", 
+            "object_repr": "sketching", 
+            "object_id": "8", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 65, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T11:23:00.028Z", 
+            "object_repr": "Right Idea", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 64, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-05T11:22:43.814Z", 
+            "object_repr": "Can We Drop the Term UX Design Already? And Other Rants", 
+            "object_id": "9", 
+            "change_message": "Changed tags.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T11:22:32.748Z", 
+            "object_repr": "UX", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-05T11:22:20.904Z", 
+            "object_repr": "We're Going All in with Product Design", 
+            "object_id": "8", 
+            "change_message": "Changed tags.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 61, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T11:21:45.012Z", 
+            "object_repr": "Prototyping", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T11:21:34.705Z", 
+            "object_repr": "Design", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-04-05T11:20:09.031Z", 
+            "object_repr": "sex", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-04-05T11:20:09.030Z", 
+            "object_repr": "jopa", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-04-05T11:20:09.027Z", 
+            "object_repr": "fuck", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-05T11:18:28.258Z", 
+            "object_repr": "Can We Drop the Term UX Design Already? And Other Rants", 
+            "object_id": "9", 
+            "change_message": "Changed allow_comments.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T11:00:19.512Z", 
+            "object_repr": "Deconstruction of Smashing Magazine's Responsive Redesign", 
+            "object_id": "15", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-05T10:55:20.567Z", 
+            "object_repr": "Quick and Dirty Design Critiques with In-Browser Prototyping", 
+            "object_id": "14", 
+            "change_message": "Changed content.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T10:54:41.055Z", 
+            "object_repr": "Quick and Dirty Design Critiques with In-Browser Prototyping", 
+            "object_id": "14", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T10:54:02.706Z", 
+            "object_repr": "In-Browser Prototyping ... Or How We Rapidly Rebooted ZURBword", 
+            "object_id": "13", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T10:52:22.610Z", 
+            "object_repr": "3 Ways to Get to the Right Idea", 
+            "object_id": "12", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-05T10:50:34.940Z", 
+            "object_repr": "Can We Drop the Term UX Design Already? And Other Rants", 
+            "object_id": "9", 
+            "change_message": "Changed categories.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-05T10:39:34.274Z", 
+            "object_repr": "Can We Drop the Term UX Design Already? And Other Rants", 
+            "object_id": "9", 
+            "change_message": "Changed categories.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-05T10:38:45.903Z", 
+            "object_repr": "Getting Sidetracked Projects Back on Track", 
+            "object_id": "10", 
+            "change_message": "Changed publish.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-05T10:38:10.470Z", 
+            "object_repr": "The Sketch-Based Response to Client Feedback", 
+            "object_id": "11", 
+            "change_message": "Changed publish.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T10:37:28.436Z", 
+            "object_repr": "The Sketch-Based Response to Client Feedback", 
+            "object_id": "11", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T10:32:56.066Z", 
+            "object_repr": "Getting Sidetracked Projects Back on Track", 
+            "object_id": "10", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T10:31:37.171Z", 
+            "object_repr": "Happy Clients", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T10:31:26.865Z", 
+            "object_repr": "Implementation", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T10:31:22.056Z", 
+            "object_repr": "Sparks", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T10:31:16.010Z", 
+            "object_repr": "Design Strategy", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-04-05T10:31:03.925Z", 
+            "object_repr": "Mamba", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-04-05T10:31:03.923Z", 
+            "object_repr": "IT", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T10:30:43.095Z", 
+            "object_repr": "Can We Drop the Term UX Design Already? And Other Rants", 
+            "object_id": "9", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T10:29:12.888Z", 
+            "object_repr": "We're Going All in with Product Design", 
+            "object_id": "8", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-05T10:29:06.774Z", 
+            "object_repr": "Interaction Design", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-04-05T10:24:54.156Z", 
+            "object_repr": "Jooooppaaaa", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-04-05T10:24:54.155Z", 
+            "object_repr": "First", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-04-05T10:24:54.154Z", 
+            "object_repr": "Post 2", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-04-05T10:24:54.153Z", 
+            "object_repr": "Test 1", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-04-05T10:24:54.152Z", 
+            "object_repr": "One more post", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-04-05T10:24:54.150Z", 
+            "object_repr": "Pezdex", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-04-05T10:24:54.147Z", 
+            "object_repr": "Jopa bygaya", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-04T21:43:20.514Z", 
+            "object_repr": "Jopa bygaya", 
+            "object_id": "6", 
+            "change_message": "Changed content.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-04T21:38:50.569Z", 
+            "object_repr": "Pezdex", 
+            "object_id": "7", 
+            "change_message": "Changed content.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-04T21:27:28.030Z", 
+            "object_repr": "Pezdex", 
+            "object_id": "7", 
+            "change_message": "Changed content.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-04T21:23:46.323Z", 
+            "object_repr": "Pezdex", 
+            "object_id": "7", 
+            "change_message": "Changed content.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-04T20:57:07.967Z", 
+            "object_repr": "Test 1", 
+            "object_id": "4", 
+            "change_message": "Changed allow_comments.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-04-04T20:11:53.504Z", 
+            "object_repr": "Jopa bygaya: ", 
+            "object_id": "15", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-04-04T20:11:53.502Z", 
+            "object_repr": "Jopa bygaya: ", 
+            "object_id": "16", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-04-04T20:11:53.499Z", 
+            "object_repr": "Jopa bygaya: ", 
+            "object_id": "17", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-03T21:22:43.678Z", 
+            "object_repr": "First", 
+            "object_id": "1", 
+            "change_message": "Changed tags.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-03T21:16:53.181Z", 
+            "object_repr": "Jopa bygaya", 
+            "object_id": "6", 
+            "change_message": "Changed tags.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-03T21:15:49.538Z", 
+            "object_repr": "Tag object", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-03T21:15:46.211Z", 
+            "object_repr": "Tag object", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-03T21:15:43.546Z", 
+            "object_repr": "Tag object", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-03T20:29:48.854Z", 
+            "object_repr": "Pezdex", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-03T20:22:45.176Z", 
+            "object_repr": "Jopa bygaya", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-02T19:28:38.903Z", 
+            "object_repr": "Mamba", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-02T19:02:35.263Z", 
+            "object_repr": "One more post", 
+            "object_id": "2", 
+            "change_message": "Changed status.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-02T19:01:57.753Z", 
+            "object_repr": "One more post", 
+            "object_id": "2", 
+            "change_message": "Changed status.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-02T17:09:40.163Z", 
+            "object_repr": "Post 2", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-02T17:09:27.009Z", 
+            "object_repr": "Test 1", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-02T16:34:20.525Z", 
+            "object_repr": "First", 
+            "object_id": "1", 
+            "change_message": "Changed publish.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-02T16:32:14.354Z", 
+            "object_repr": "Jooooppaaaa", 
+            "object_id": "3", 
+            "change_message": "Changed publish.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-02T16:32:09.595Z", 
+            "object_repr": "One more post", 
+            "object_id": "2", 
+            "change_message": "Changed publish.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-04-02T16:31:56.116Z", 
+            "object_repr": "First", 
+            "object_id": "1", 
+            "change_message": "Changed publish.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-02T16:28:13.285Z", 
+            "object_repr": "Jooooppaaaa", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-02T16:27:51.376Z", 
+            "object_repr": "One more post", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-02T10:50:39.097Z", 
+            "object_repr": "IT", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-04-02T10:50:26.190Z", 
+            "object_repr": "First", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }
+]

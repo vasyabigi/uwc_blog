@@ -6,16 +6,27 @@
 
 {% block content %}
   <h2>{{ post.title }}</h2>
-  <p>
-    {% if post.get_previous_by_publish %}
-      <a href="{{ post.get_previous_post.get_absolute_url }}" title="View previous post">&laquo; {{ post.get_previous_post }}</a>
+  <p>{{ post.publish|date:"F j, Y" }}</p>
+  {% with post.categories.all as categories %}
+    {% if categories %}
+      <h3>Under: {{ post.categories.all|join:', ' }}</h3>
     {% endif %}
-    {% if post.get_next_by_publish %}
-      | <a class="next" href="{{ post.get_next_post.get_absolute_url }}" title="View next post">{{ post.get_next_post }} &raquo;</a>
+  {% endwith %}
+
+  {% with post.tags.all as tags %}
+    {% if tags %}
+      <h3>Tags: {{ tags|join:', ' }}</h3>
     {% endif %}
-  </p>
-  <p>{{ post.publish|date:"j F Y" }}</p>
+  {% endwith %}
+
   <div>{{ post.content|safe }}</div>
+
+  {% if post.get_previous_by_publish %}
+    (previous post) <a href="{{ post.get_previous_post.get_absolute_url }}" title="View previous post">&laquo; {{ post.get_previous_post }}</a>
+  {% endif %}
+  {% if post.get_next_by_publish %}
+    | <a class="next" href="{{ post.get_next_post.get_absolute_url }}" title="View next post">{{ post.get_next_post }} &raquo;</a> (next post)
+  {% endif %}
 
   {% if comment_form %}
     <h3>Comments:</h3>
@@ -24,7 +35,7 @@
         {% autopaginate comments 5 %}
         {% for comment in comments %}
           <li>
-            {{ comment.created }} <b>{{ comment.author }}:</b> {{ comment.content }}
+            {{ comment.created|date:"F d Y" }}, <b>{{ comment.author }}:</b> {{ comment.content }}
           </li>
         {% endfor %}
       </ul>
