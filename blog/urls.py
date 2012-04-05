@@ -18,4 +18,5 @@ urlpatterns = patterns('',
     url(r'^tags/(?P<slug>[-\w]+)/$', tag_detail, name="tag_detail"),
     url(r'^tags/$', ListView.as_view(model=Tag), name="tag_list"),
     url(r'^$', post_list, name="post_list"),
+    url(r'^archive/$', archive_list, name="archive_list"),
 )

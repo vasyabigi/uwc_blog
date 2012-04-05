@@ -151,3 +151,13 @@ def tag_detail(request, slug, template_name="blog/tag_detail.html"):
     tag = get_object_or_404(Tag, slug=slug)
     posts = tag.posts.all()
     return render(request, template_name, {'posts': posts})
+
+
+def archive_list(request, template_name="blog/archive_list.html"):
+    posts = Post.objects.published()
+    date_list = posts.dates('publish', 'month')
+    context = {
+        'date_list': date_list,
+        'posts': posts,
+    }
+    return render(request, template_name, context)

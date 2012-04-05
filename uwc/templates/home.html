@@ -1,10 +1,25 @@
 {% extends "base.html" %}
 
+{% load pagination_tags %}
+
+{% block title %}UWC blog{% endblock title %}
+
 {% block content %}
-  <p>Home page.</p>
+  <h1>UWC blog.</h1>
+  <h2>Menu:</h2>
   <ul>
-    {% for category in categories %}
-      <li><a href="{{ category.get_absolute_url }}">{{ category.title }}</a></li>
+    <li><a href="{% url blog:category_list %}">Categories</a></li>
+    <li><a href="{% url blog:archive_list %}">Archive</a></li>
+    <li><a href="{% url blog:tag_list %}">Tags</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+
+  <h3>Latest posts:</h3>
+  <ul>
+    {% autopaginate posts 5 %}
+    {% for post in posts %}
+      <li>{{ post.publish|date:"M d, Y" }} <a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
+  {% paginate %}
 {% endblock content %}

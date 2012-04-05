@@ -6,7 +6,9 @@
   <h2>Post tags</h2>
   <ul>
     {% for tag in object_list %}
-      <li><a href="{{ tag.get_absolute_url }}" title="View posts tagged {{ tag }}">{{ tag }}</a></li>
+      {% if tag.posts.exists %}
+        <li><a href="{{ tag.get_absolute_url }}" title="View posts tagged {{ tag }}">{{ tag }}</a></li>
+      {% endif %}
     {% endfor %}
   </ul>
 {% endblock %}
