@@ -10,17 +10,13 @@
 
 {% block content %}
   {% if posts %}
-    <h2>Posts for {{ category.title }}</h2>
-    <div>
+    <h3>Posts for {{ category.title }}</h3>
       {% autopaginate posts 5 %}
       {% for post in posts %}
-      <div>
-        <h3><a href="{{ post.get_absolute_url }}" title="View this post">{{ post.title }}</a></h3>
-        <p>{{ post.publish|date:"Y F d" }}</p>
+        <li>{{ post.publish|date:"Y F d" }}: <a href="{{ post.get_absolute_url }}" title="View this post">{{ post.title }}</a></li>
       </div>
       {% endfor %}
       {% paginate %}
-    </div>
   {% else %}
     <h2>No posts for {{ category.title }}.</h2>
   {% endif %}

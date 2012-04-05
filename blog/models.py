@@ -53,7 +53,6 @@ class Post(models.Model):
     )
     title = models.CharField(max_length=255)
     slug = models.SlugField(unique_for_date='publish')
-    author = models.CharField(max_length=255)
     content = models.TextField()
     status = models.IntegerField(choices=STATUS_CHOICES, default=2)
     publish = models.DateField(default=timezone.now)

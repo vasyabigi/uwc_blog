@@ -22,9 +22,9 @@ class PostAdmin(ImperaviModelAdmin, admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     fieldsets = (
         (None, {
-            'fields': (('title', 'slug'), 'author', 'content',
-                ('status', 'publish', 'allow_comments'),
-                'categories', 'tags',
+            'fields': (('title', 'slug', 'publish',),
+                ('status', 'allow_comments'),
+                'content', 'categories', 'tags',
             )
         }),
     )
