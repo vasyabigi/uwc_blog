@@ -1,0 +1,23 @@
+<h2>Menu:</h2>
+<ul>
+  <li>
+    <a href="{% url blog:post_list %}">Latest Posts</a>
+    {% ifequal active 'posts' %}<b>active</b>{% endifequal %}
+  </li>
+  <li>
+    <a href="{% url blog:category_list %}">Categories</a>
+    {% ifequal active 'categories' %}<b>active</b>{% endifequal %}
+  </li>
+  <li>
+    <a href="{% url blog:archive_list %}">Archive</a>
+    {% ifequal active 'archive' %}<b>active</b>{% endifequal %}
+  </li>
+  <li>
+    <a href="{% url blog:tag_list %}">Tags</a>
+    {% ifequal active 'tags' %}<b>active</b>{% endifequal %}
+  </li>
+  <li>
+    <a href="{% url about %}">About</a>
+    {% ifequal active 'about' %}<b>active</b>{% endifequal %}
+  </li>
+</ul>

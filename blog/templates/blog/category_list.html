@@ -2,8 +2,12 @@
 
 {% block title %}Post categories{% endblock %}
 
+{% block menu %}
+  {% include "includes/menu.html" with active="categories" %}
+{% endblock menu %}
+
 {% block content %}
-  <h2>Post categories</h2>
+  <h3>Post categories:</h3>
    <ul>
     {% for category in object_list %}
     <li><a href="{{ category.get_absolute_url }}" title="View posts in this category">{{ category }}</a></li>

@@ -2,14 +2,19 @@
 
 {% block title %}Posts for {{ tag.name }}{% endblock %}
 
+{% block menu %}
+  {% include "includes/menu.html" with active="tags" %}
+{% endblock menu %}
+
 {% block content %}
-  <h2>Posts for {{ tag.name }}</h2>
-  <div>
+  <h3>Posts for {{ tag.name }}:</h3>
+  <ul>
     {% for post in posts %}
-    <div>
-      <h3><a href="{{ post.get_absolute_url }}" title="View this post">{{ post.title }}</a></h3>
-      <p>{{ post.publish|date:"Y F d" }}</p>
+      <li>
+        {{ post.publish|date:"Y F d" }}
+        <a href="{{ post.get_absolute_url }}" title="View this post">{{ post.title }}</a>
+      </li>
     </div>
     {% endfor %}
-  </div>
+  </ul>
 {% endblock %}

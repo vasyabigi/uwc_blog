@@ -4,16 +4,11 @@
 
 {% block title %}UWC blog{% endblock title %}
 
-{% block content %}
-  <h1>UWC blog.</h1>
-  <h2>Menu:</h2>
-  <ul>
-    <li><a href="{% url blog:category_list %}">Categories</a></li>
-    <li><a href="{% url blog:archive_list %}">Archive</a></li>
-    <li><a href="{% url blog:tag_list %}">Tags</a></li>
-    <li><a href="#">About</a></li>
-  </ul>
+{% block menu %}
+  {% include "includes/menu.html" with active="posts" %}
+{% endblock menu %}
 
+{% block content %}
   <h3>Latest posts:</h3>
   <ul>
     {% autopaginate posts 5 %}

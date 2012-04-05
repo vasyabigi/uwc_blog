@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>
-            {% block title %}
-            {% endblock title %}
-        </title>
-    </head>
-    <body>
-        {% block content %}
-        {% endblock content %}
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {% block title %}
+      {% endblock title %}
+    </title>
+  </head>
+  <body>
+    <h1>UWC blog.</h1>
+    {% block menu %}
+      {% include "includes/menu.html" %}
+    {% endblock menu %}
+    <h2>Content:</h2>
+    {% block content %}
+    {% endblock content %}
+  </body>
 </html>

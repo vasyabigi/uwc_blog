@@ -2,8 +2,12 @@
 
 {% block title %}Post archive for {{ year }}{% endblock %}
 
+{% block menu %}
+  {% include "includes/menu.html" with active="archive" %}
+{% endblock menu %}
+
 {% block content %}
-  <h2>Post archive for {{ year }}</h2>
+  <h3>Post archive for {{ year }}:</h3>
   <ul>
     {% for month in date_list %}
     <li><a href="{% url blog:post_list %}{{ year }}/{{ month|date:"b" }}/" title="View items posted this month">{{ month|date:"F" }}</a></li>

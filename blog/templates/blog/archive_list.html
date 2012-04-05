@@ -2,11 +2,15 @@
 
 {% load pagination_tags %}
 
+{% block menu %}
+  {% include "includes/menu.html" with active="archive" %}
+{% endblock menu %}
+
 {% block content %}
   <ul>
     {% for post in posts %}
-      {% ifchanged post.publish.year %}<h2><a href="{% url blog:archive_year post.publish.year %}">{{ post.publish.year }}:</a></h2>{% endifchanged %}
-      {% ifchanged post.publish.month %}<h3><a href="{% url blog:post_list %}{{ post.publish.year }}/{{ post.publish|date:"b" }}/">{{ post.publish|date:"F" }}:</a></h3>{% endifchanged %}
+      {% ifchanged post.publish.year %}<h3><a href="{% url blog:archive_year post.publish.year %}">{{ post.publish.year }}:</a></h3>{% endifchanged %}
+      {% ifchanged post.publish.month %}<h4><a href="{% url blog:post_list %}{{ post.publish.year }}/{{ post.publish|date:"b" }}/">{{ post.publish|date:"F" }}:</a></h4>{% endifchanged %}
       <li><a href="{{ post.get_absolute_url }}">{{ post }}</a></li>
     {% endfor %}
   </ul>

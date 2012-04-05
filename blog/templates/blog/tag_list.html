@@ -2,8 +2,12 @@
 
 {% block title %}Post tags{% endblock %}
 
+{% block menu %}
+  {% include "includes/menu.html" with active="tags" %}
+{% endblock menu %}
+
 {% block content %}
-  <h2>Post tags</h2>
+  <h3>Post tags:</h3>
   <ul>
     {% for tag in object_list %}
       {% if tag.posts.exists %}

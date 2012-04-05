@@ -10,8 +10,8 @@ from forms import PostCommentForm
 
 
 def post_list(request, template_name='blog/post_list.html'):
-    post_list = Post.objects.published()
-    return render(request, template_name, {'post_list': post_list})
+    posts = Post.objects.published()
+    return render(request, template_name, {'posts': posts})
 
 
 def archive_year(request, year, template_name="blog/archive_year.html"):
@@ -150,7 +150,11 @@ def category_detail(request, slug, template_name="blog/category_detail.html"):
 def tag_detail(request, slug, template_name="blog/tag_detail.html"):
     tag = get_object_or_404(Tag, slug=slug)
     posts = tag.posts.all()
-    return render(request, template_name, {'posts': posts})
+    context = {
+        'tag': tag,
+        'posts': posts,
+    }
+    return render(request, template_name, context)
 
 
 def archive_list(request, template_name="blog/archive_list.html"):

@@ -4,6 +4,10 @@
 
 {% block title %}Posts for {{ category.title }}{% endblock %}
 
+{% block menu %}
+  {% include "includes/menu.html" with active="categories" %}
+{% endblock menu %}
+
 {% block content %}
   {% if posts %}
     <h2>Posts for {{ category.title }}</h2>

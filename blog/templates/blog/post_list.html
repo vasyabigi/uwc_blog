@@ -2,11 +2,16 @@
 
 {% load pagination_tags %}
 
+{% block menu %}
+  {% include "includes/menu.html" with active="posts" %}
+{% endblock menu %}
+
 {% block content %}
+  <h3>Latest posts:</h3>
   <ul>
-    {% autopaginate post_list 5 %}
-    {% for post in post_list %}
-      <li><a href="{{ post.get_absolute_url }}">{{ post }}</a></li>
+    {% autopaginate posts 5 %}
+    {% for post in posts %}
+      <li>{{ post.publish|date:"M d, Y" }} <a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
   {% paginate %}

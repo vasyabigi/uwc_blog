@@ -4,16 +4,20 @@
 
 {% block title %}Post archive for {{ month|date:"F Y" }}{% endblock %}
 
+{% block menu %}
+  {% include "includes/menu.html" with active="archive" %}
+{% endblock menu %}
+
 {% block content %}
-  <h2>Post archive for {{ month|date:"F Y" }}</h2>
+  <h3>Post archive for {{ month|date:"F Y" }}:</h3>
   <div>
     {% autopaginate posts 5 %}
+    <ul>
     {% for post in posts %}
-    <div>
-      <h3><a href="{{ post.get_absolute_url }}" title="View this post">{{ post.title }}</a></h3>
-      <p>{{ post.publish|date:"Y F d" }}</p>
-    </div>
+      <li>{{ post.publish|date:"F/d" }} <a href="{{ post.get_absolute_url }}" title="View this post">{{ post.title }}</a>
+      </li>
     {% endfor %}
+    </ul>
     {% paginate %}
   </div>
 {% endblock %}
