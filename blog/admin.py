@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from models import Category, Post, Tag, PostComment
+from models import Category, Post, Tag, PostComment, SimpleSpamProtection
 from imperavi.admin import ImperaviModelAdmin
 
 
@@ -35,3 +35,5 @@ class PostCommentAdmin(admin.ModelAdmin):
     list_display = ('__unicode__', 'created')
     list_filter = ('post',)
 admin.site.register(PostComment, PostCommentAdmin)
+
+admin.site.register(SimpleSpamProtection)

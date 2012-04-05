@@ -102,3 +102,16 @@ class PostComment(models.Model):
 
     def __unicode__(self):
         return u'%s: %s' % (self.post, self.content[:60])
+
+
+class SimpleSpamProtection(models.Model):
+    question = models.CharField(max_length=255)
+    answer = models.IntegerField()
+
+    class Meta:
+        verbose_name = 'Spam protection'
+        verbose_name_plural = 'Spam protection'
+        ordering = ('question',)
+
+    def __unicode__(self):
+        return u'%s: %s' % (self.question[:60], self.answer)
