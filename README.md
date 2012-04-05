@@ -5,13 +5,13 @@ If you're not using virtualenv or virtualenvwrapper you may skip this step.
 
 #### For virtualenvwrapper ####
 ```bash
-mkvirtualenv --no-site-packages {{ project_name }}-env
+mkvirtualenv uwc-env
 ```
 
 #### For virtualenv ####
 ```bash
-virtualenv --no-site-packages {{ project_name }}-env
-cd {{ project_name }}-env
+virtualenv uwc-env
+cd uwc-env
 source bin/activate
 ```
 
@@ -19,24 +19,24 @@ source bin/activate
 Obtain the url to your git repository.
 
 ```bash
-git clone <URL_TO_GIT_RESPOSITORY> {{ project_name }}
+git clone git@github.com:vasyabigi/uwc.git uwc
 ```
 
 ### Install requirements ###
 ```bash
-cd {{ project_name }}
+cd uwc
 pip install -r requirements.txt
 ```
 
 ### Configure project ###
 ```bash
-cp {{ project_name }}/__local_settings.py {{ project_name }}/local_settings.py
-vi {{ project_name }}/local_settings.py
+cp uwc/local_settings.py.example uwc/local_settings.py
+vi uwc/local_settings.py
 ```
 
 ### Sync database ###
 ```bash
-python manage.py syncdb
+python manage.py syncdb --all
 ```
 
 ## Running ##
